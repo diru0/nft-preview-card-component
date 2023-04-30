@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-bem-css-flexbox-3D3oCl5H7H]
-- Live Site URL: [https://diru0.github.io/order-summary-component/]
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-component-bem-0ho7ntLPVn]
+- Live Site URL: [https://diru0.github.io/nft-preview-card-component/]
 
 ## My process
 

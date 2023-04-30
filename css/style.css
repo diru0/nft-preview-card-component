@@ -1,0 +1,147 @@
+:root {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-very-dark-blue-main: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  background: var(--color-very-dark-blue-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  max-width: 330px;
+  background: var(--color-very-dark-blue-card);
+  padding: 2.5rem;
+  border-radius: 15px;
+}
+
+.card__image {
+  border-radius: 10px;
+}
+
+.card__overlay-image {
+  position: absolute;
+  width: 280px;
+  height: 275px;
+  border-radius: 10px;
+  bottom: 65rem;
+  background-color: hsl(178, 100%, 50%);
+  text-align: center;
+  line-height: 310px;
+  opacity: 0;
+}
+
+.card__overlay-image:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.card__heading-main {
+  color: var(--color-white);
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2.8rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.card__description {
+  color: var(--color-soft-blue);
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+
+.card__crypto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__crypto-amount {
+  color: var(--color-cyan);
+  font-size: 1.7;
+}
+
+.card__crypto-amount::before {
+  content: url(../images/icon-ethereum.svg);
+  width: 1.1rem;
+  height: 1.8rem;
+}
+
+.card__crypto-time-left::before {
+  content: url(../images/icon-clock.svg);
+  width: 1.1rem;
+  height: 1.8rem;
+}
+
+.card__crypto-amount::before,
+.card__crypto-time-left::before {
+  position: relative;
+  top: 0.3rem;
+  right: 0.5rem;
+}
+
+.card__crypto-horizontal-line {
+  border: 1px solid var(--color-very-dark-blue-line);
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.card__contributions {
+  display: flex;
+  line-height: 1.8;
+}
+
+.card__contributions-avatar {
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50px;
+}
+
+.card__contributions-author {
+  position: relative;
+  left: 1rem;
+}
+
+.card__contributions-author span {
+  color: var(--color-white);
+}
+
+.card .card__description,
+.card__crypto-time-left,
+.card__contributions-author {
+  color: var(--color-soft-blue);
+  font-weight: 200;
+}
+
+.card__heading-main:hover,
+.card__contributions-author span:hover {
+  color: var(--color-cyan);
+  cursor: pointer;
+}
+
+.card__o:hover {
+  cursor: pointer;
+}

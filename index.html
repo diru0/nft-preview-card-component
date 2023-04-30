@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="card">
+      <img
+        class="card__image"
+        src="images/image-equilibrium.jpg"
+        alt="Transparent cube emitting red reflexes on dark blue background"
+      />
+      <div class="card__overlay-image">
+        <img src="images/icon-view.svg" alt="#" />
+      </div>
+      <h1 class="card__heading-main">Equilibrium #3429</h1>
+      <div class="card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+      <div class="card__crypto">
+        <div class="card__crypto-amount">0.041 ETH</div>
+        <div class="card__crypto-time-left">3 days left</div>
+      </div>
+      <hr class="card__crypto-horizontal-line" />
+      <div class="card__contributions">
+        <img
+          class="card__contributions-avatar"
+          src="images/image-avatar.png"
+          alt="Male with brown curly hair"
+        />
+        <p class="card__contributions-author">
+          Creation of <span>Jules Wyvern</span>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
